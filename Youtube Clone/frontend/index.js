@@ -32,6 +32,37 @@ function menu() {
     }
 }
 
+
+function uploading() {
+    window.location.href = "./uploading.html";
+}
+
+function handleFile() {
+    // Get the file input element
+    const fileInput = document.getElementById('filei');
+  
+    // Check if files were selected
+    if (fileInput.files.length > 0) {
+      // Access the first file (in case of multiple files, you might iterate through them)
+      const uploadedFile = fileInput.files[0];
+  
+      // Display information about the file
+      console.log('File name:', uploadedFile.name);
+      console.log('File type:', uploadedFile.type);
+      console.log('File size (bytes):', uploadedFile.size);
+  
+      // You can also read the file content or perform additional operations as needed
+      // For example, to read the content as text:
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        console.log('File content:', event.target.result);
+      };
+      reader.readAsText(uploadedFile);
+    } else {
+      console.log('No file selected.');
+    }
+}
+
 /*
 
 Projects Evaluation
@@ -49,3 +80,4 @@ Aftermath of uploading video
 - python methods to upload videos using youtube-library
 
 */
+

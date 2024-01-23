@@ -40,7 +40,7 @@ process.on('SIGINT', () => {
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
     res.status(500).send("<h1>hello world!!</h1>")
 })
 
