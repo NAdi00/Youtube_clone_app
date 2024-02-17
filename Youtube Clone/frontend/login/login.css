@@ -1,0 +1,23 @@
+
+form {
+    position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);
+    border: 2px solid #ddd;padding-top:25px;width:30%;padding-bottom: 25px;
+    padding-left: 60px;
+}
+form h1 {
+    text-align: center;
+}
+form input[type='submit'] {
+    text-align: center;background-color:blueviolet;display: block;
+    position: relative;left: 35%;width: 30%;height: 35px;
+    border-radius: 10px;color: white;
+}
+form input[type='text'] {
+    width: 75%;height: 30px;position: relative;padding-left: 20px;
+}
+form input[type='email'] {
+    width: 75%;height: 30px;position: relative;padding-left: 20px;
+}
+form input[type='password'] {
+    width: 75%;height: 30px;position: relative;padding-left: 20px;
+}
