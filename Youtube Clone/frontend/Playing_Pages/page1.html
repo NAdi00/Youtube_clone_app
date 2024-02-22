@@ -17,7 +17,7 @@ crossorigin="anonymous">
     <nav>
         <i class="fa fa-bars" style="float: left;margin: 5px 20px auto;z-index:2;" onclick="menu()"></i>
         <i class="fa fa-youtube-play" style="font-size: 175%;float: left;color: red;z-index: 2;"></i>
-        <div class="left_nav"><b>YouTube</b><sup>ZA</sup></div>
+        <div class="left_nav"><b><a href="../index.html" >YouTube</a></b><sup>ZA</sup></div>
         
         <div class="right_nav">
         <div class="fa fa-video-camera" onclick="uploading()"> </div>
@@ -38,74 +38,50 @@ crossorigin="anonymous">
             <br>
             <div>
                 <h3>20 Comments</h3>
-                <input type="text" placeholder="Add a comment" style="border: none;outline: none;border-bottom: 1px solid black;">
+                <input type="text" placeholder="Add a comment" style="border: none;outline: none;border-bottom: 1px solid black;" id="myInputs"><button id="adding" onclick="adding()">Add</button>
 
-                <div class="Comments">
-                    <div>
-                        <img src="../five.jpg" style="border-radius: 50%;width: 80%;">
-                        <div>
-                            <span>@accountname</span><br>
-                            <span>cfrgbythgnbhgjynj</span><br>
-                            Thumb up && Thumb down
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../five.jpg" style="border-radius: 50%;width: 80%;">
-                        <div>
-                            <span>@accountname</span><br>
-                            <span>cfrgbythgnbhgjynj</span><br>
-                            Thumb up && Thumb down
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../five.jpg" style="border-radius: 50%;width: 80%;">
-                        <div>
-                            <span>@accountname</span><br>
-                            <span>cfrgbythgnbhgjynj</span><br>
-                            Thumb up && Thumb down
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../five.jpg" style="border-radius: 50%;width: 80%;">
-                        <div>
-                            <span>@accountname</span><br>
-                            <span>cfrgbythgnbhgjynj</span><br>
-                            Thumb up && Thumb down
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../five.jpg" style="border-radius: 50%;width: 80%;">
-                        <div>
-                            <span>@accountname</span><br>
-                            <span>cfrgbythgnbhgjynj</span><br>
-                            Thumb up && Thumb down
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../five.jpg" style="border-radius: 50%;width: 80%;">
-                        <div>
-                            <span>@accountname</span><br>
-                            <span>cfrgbythgnbhgjynj</span><br>
-                            Thumb up && Thumb down
-                        </div>
-                    </div>
+                <div class="Comments" id="Comments">
+                    
                 </div>
             </div>
         </div>
         <div class="suggestions">
             <button style="background-color: white;border: 1px solid black;color:black;width:80%;border-radius: 10px;position: relative;left: 10%;margin-bottom: 10px;">Show chat replay</button>
-            <a href="#"><img src="../pexels-harsch-shivam-2007647.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
-            <a href="#"><img src="../pexels-sebastian-arie-voortman-214574.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
-            <a href="#"><img src="../four.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
-            <a href="#"><img src="../five.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
-            <a href="#"><img src="../pexels-harsch-shivam-2007647.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
-            <a href="#"><img src="../pexels-sebastian-arie-voortman-214574.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
-            <a href="#"><img src="../four.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
-            <a href="#"><img src="../five.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
-            <a href="#"><img src="../four.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
-            <a href="#"><img src="../five.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page2.html"><img src="../pexels-harsch-shivam-2007647.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page3.html"><img src="../pexels-sebastian-arie-voortman-214574.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page4.html"><img src="../four.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page5.html"><img src="../five.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page2.html"><img src="../pexels-harsch-shivam-2007647.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page3.html"><img src="../pexels-sebastian-arie-voortman-214574.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page4.html"><img src="../four.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page5.html"><img src="../five.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page4.html"><img src="../four.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
+            <a href="./page5.html"><img src="../five.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
         </div>
     </div>
+    <script>
+        var Comments = document.getElementById('Comments');
+        var commentElement = ["<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
+        "<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
+        "<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
+        "<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",];
+        var input = document.getElementById(myInputs);
 
+        input.value = ''
+        
+        function adding() {
+            commentElement.push(`<div>
+                        <img src="../five.jpg" style="border-radius: 50%;width: 80%;">
+                        <div>
+                            <span>@accountname</span><br>
+                            <span>${input.value}</span><br>
+                            Thumb up && Thumb down
+                        </div>
+                    </div>`)
+            Comments.innerHTML = `${commentElement.map((item) => {item})}`
+            
+        }
+
+    </script>
 </body>
 </html>
