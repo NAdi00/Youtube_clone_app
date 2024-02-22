@@ -81,3 +81,18 @@ Aftermath of uploading video
 
 */
 
+// var bell = document.getElementById('bell');
+
+// var bell_count = 0;
+
+// function bell_clicked () {
+//   if (bell_count % 2 == 1) {
+//     bell.style.color = '#ddd';
+//     bell.title = 'active'
+//   }
+//   if (bell_count % 2 == 0) {
+//     bell.style.color = 'black';
+//     bell.title = 'Notification'
+//   }
+//   bell_count += 1;
+// }
