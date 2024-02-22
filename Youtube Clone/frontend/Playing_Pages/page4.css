@@ -1,0 +1,16 @@
+
+.page_main {
+    display: grid;grid-template-columns: 65fr 35fr;margin-left: 5%;margin-right: 5%;
+}
+.suggestions {
+    background-color: aqua;padding-top: 10px;
+}
+.suggestions > a img{
+    height: 120px;margin-bottom: 8px;padding-left: 5px;
+}
+.video {
+    background-color:aquamarine
+}
+.Comments > div {
+    display: grid;grid-template-columns: 1fr 8fr;margin-top: 20px;
+}
