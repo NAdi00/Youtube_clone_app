@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .notifications {
+            position: relative;
+            width: 50%;left:25%
+        }
+        .notifications > div {
+            display: grid;grid-template-columns: 1fr 7fr 1fr;
+            border-bottom: 2px solid black;margin-bottom: 5px;
+        }
+    </style>
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./main.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="index.js"></script>
+</head>
+<body>
+<nav>
+    <i class="fa fa-bars" style="float: left;margin: 5px 20px auto;z-index:2;" onclick="menu()"></i>
+    <i class="fa fa-youtube-play" style="font-size: 175%;float: left;color: red;z-index: 2;"></i>
+    <div class="left_nav"><b><a href="index.html"> YouTube</a></b><sup>ZA</sup></div>
+    
+    <div class="right_nav">
+    <div class="fa fa-video-camera" onclick="uploading()"> </div>
+    <div class="fa fa-bell" id="bell" title="Notifications" onclick="openNotif()"></div>
+    <div style="background-color: blueviolet;border-radius:50%;width:40px;height:40px;color:white" >_A_</div>
+    </div>
+</nav>
+    <h1 style="text-align: center;">Your Notifications</h1>
+    <hr>
+    <div class="notifications">
+        <div>
+            <img src="pexels-athena-2582937_s.jpg" style="width: 50px;border-radius: 50%;"> <span> Vhembe NEWS gfdewbvkhrbfgviuj vbhdwbksvrhju hvbfnvwujhkbrtf vbkwrjvbrjht</span><img src="pexels-athena-2582937_s.jpg" style="width: 120px;height:75px">
+        </div>
+        <div>
+            <img src="pexels-harsch-shivam-2007647_s.jpg" style="width: 50px;border-radius: 50%;"> <span> Tech Buddy nhkujfvdebwvh bfdkhujvwsbrf vbfdjkvbjudwsvh bwujkrhvbrjvu</span><img src="pexels-harsch-shivam-2007647_s.jpg" style="width: 120px;height:75px">
+        </div>
+        <div>
+            <img src="pexels-sebastian-arie-voortman-214574_s.jpg" style="width: 50px;border-radius: 50%;"> <span> Money Making bfdesgvcdfc vchfdsvcgdfsvc hgfdscvdshgdfsvcdf </span><img src="pexels-sebastian-arie-voortman-214574_s.jpg" style="width: 120px;height:75px"> 
+        </div>
+        <div>
+            <img src="four_s.jpg" style="width: 50px;border-radius: 50%;"> <span> Mr Ezekiel bvghfdsyja vdsahfgvcgdfhjy jhgdfvcjgdf dvcsavcgdhfvcdf</span><img src="four_s.jpg" style="width: 120px;height:75px">
+        </div>
+        <div>
+            <img src="five_s.jpg" style="width: 50px;border-radius: 50%;"> <span> Fixing Cars 102 bvjdfhvbsfv bdsjfhvbdfghvjb bdshgvfdgjv hjvdbvjf</span><img src="five_s.jpg" style="width: 120px;height:75px">
+        </div>
+    </div>
+</body>
+</html>

@@ -96,3 +96,7 @@ Aftermath of uploading video
 //   }
 //   bell_count += 1;
 // }
+
+function openNotif() {
+  window.open('./Notification.html')
+}
