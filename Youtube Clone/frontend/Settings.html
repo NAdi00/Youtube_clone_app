@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./main.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .mains {
+        display: grid;
+        grid-template-columns: 1fr 5fr;margin: 25px;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <i class="fa fa-bars" style="float: left;margin: 5px 20px auto;z-index:2;" onclick="menu()"></i>
+        <i class="fa fa-youtube-play" style="font-size: 175%;float: left;color: red;z-index: 2;"></i>
+        <div class="left_nav"><b><a href="index.html"> YouTube</a></b><sup>ZA</sup></div>
+        
+        <div class="right_nav">
+        <div class="fa fa-video-camera" onclick="uploading()"> </div>
+        <div class="fa fa-bell" id="bell" title="Notifications" onclick="openNotif()"></div>
+        <div style="background-color: blueviolet;border-radius:50%;width:40px;height:40px;color:white" >_A_</div>
+        </div>
+    </nav>
+    <div class="mains">
+        <div class="left_nav_setting">
+            <h2 >Settings</h2>
+            <div ><a href="#" style="color: #ddd;">Account</a></div>
+            <div><a href="./Notification.html">Notifications</a></div>
+        </div>
+        <div class="Setting_left">
+            <h2>Settings</h2>
+            <h1>Choose How You Appear And What You See</h1>
+            <span>Signin as whathwtahwta@gmail.com</span>
+            <hr>
+            <h3>Your MyTube Channel</h3>
+            <span>Yopu don't have a Channel</span>
+            <br>
+            <br>
+            <hr>
+            <h3>Your Google Account</h3>
+            <span>You signin to MyTube with email</span><br><br>
+
+            <pre><h5>Your Email:</h5>  <span>whathwtahwta@gmail.com | <a href="" style="color: blue;">Change email</a></span></pre>
+            <br>
+            <pre><h5>Membership: </h5>   <span>No Membership</span></pre>
+
+        </div>
+    </div>
+</body>
+</html>

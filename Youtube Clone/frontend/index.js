@@ -100,3 +100,6 @@ Aftermath of uploading video
 function openNotif() {
   window.open('./Notification.html')
 }
+function openSettings() {
+  window.open('./Settings.html')
+}

@@ -7,14 +7,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>hello</h1>
+    <h1 id="01">hello</h1>
     <p>hello world!!</p>
+    <input type="text" placeholder="nothing" id="input">
+    <button onclick="adding()">Add</button>
     <script>
-        $(document).ready(function(){
-        $("p").click(function(){
-        $(this).hide();
-        });
-        });
+        var hello = document.getElementById('01');
+        var input = document.getElementById('input');
+        var comments = ["<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
+        "<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
+        "<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
+        "<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",];
+
+var nothing = 'Hello there'
+        function adding() {
+            comments.push(`<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>${input.value}</span><br>Thumb up && Thumb down</div></div>`)
+            hello.innerHTML = comments.map((items) => "<div>" + items + "</div>")
+        };
     </script>
 </body>
 </html>

@@ -38,7 +38,7 @@ crossorigin="anonymous">
             <br>
             <div>
                 <h3>20 Comments</h3>
-                <input type="text" placeholder="Add a comment" style="border: none;outline: none;border-bottom: 1px solid black;" id="myInputs"><button id="adding" onclick="adding()">Add</button>
+                <input type="text" placeholder="Add a comment" style="border: none;outline: none;border-bottom: 1px solid black;" id="myInputs" value="This is greate"><button id="adding" onclick="adding()">Add</button>
 
                 <div class="Comments" id="Comments">
                     
@@ -61,24 +61,24 @@ crossorigin="anonymous">
     </div>
     <script>
         var Comments = document.getElementById('Comments');
-        var commentElement = ["<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
-        "<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
-        "<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
-        "<div><img src='../five.jpg' style='border-radius: 50%;width: 80%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",];
-        var input = document.getElementById(myInputs);
+        var commentElement = ["<div><img src='../five_s.jpg' style='border-radius: 50%;width: 60%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
+        "<div><img src='../five_s.jpg' style='border-radius: 50%;width: 60%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
+        "<div><img src='../five_s.jpg' style='border-radius: 50%;width: 60%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",
+        "<div><img src='../five_s.jpg' style='border-radius: 50%;width: 60%;'><div><span>@accountname</span><br><span>cfrgbythgnbhgjynj</span><br>Thumb up && Thumb down</div></div>",];
+        var input = document.getElementById('myInputs');
 
-        input.value = ''
+        Comments.innerHTML = commentElement.map((item) => item);
         
         function adding() {
             commentElement.push(`<div>
-                        <img src="../five.jpg" style="border-radius: 50%;width: 80%;">
+                        <img src="../five_s.jpg" style="border-radius: 50%;width: 60%;">
                         <div>
                             <span>@accountname</span><br>
                             <span>${input.value}</span><br>
                             Thumb up && Thumb down
                         </div>
                     </div>`)
-            Comments.innerHTML = `${commentElement.map((item) => {item})}`
+            Comments.innerHTML = commentElement.map((item) => item);
             
         }
     </script>
