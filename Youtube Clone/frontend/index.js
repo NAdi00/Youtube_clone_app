@@ -36,6 +36,9 @@ function menu() {
 function uploading() {
     window.location.href = "./uploading.html";
 }
+function uploadingC() {
+  window.location.href = "../uploading.html";
+}
 
 function handleFile() {
     // Get the file input element
@@ -100,6 +103,12 @@ Aftermath of uploading video
 function openNotif() {
   window.open('./Notification.html')
 }
+function openNotifC() {
+  window.open('../Notification.html')
+}
 function openSettings() {
   window.open('./Settings.html')
+}
+function openSettingsC() {
+  window.open('../Settings.html')
 }

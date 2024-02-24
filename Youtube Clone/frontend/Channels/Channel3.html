@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../main.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../index.js"></script>
+<style>
+    .mainC {
+        position: relative;left:25%;width:70%
+    }
+    header {
+        display: grid;grid-template-columns: 2fr 5fr;
+    }
+    .contentC > ul li{
+        display: inline-block;margin-right: 50px;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <i class="fa fa-bars" style="float: left;margin: 5px 20px auto;z-index:2;" onclick="menu()"></i>
+        <i class="fa fa-youtube-play" style="font-size: 175%;float: left;color: red;z-index: 2;"></i>
+        <div class="left_nav"><b><a href="../index.html"> YouTube</a></b><sup>ZA</sup></div>
+        
+        <div class="right_nav">
+        <div class="fa fa-video-camera" onclick="uploadingC()"> </div>
+        <div class="fa fa-bell" id="bell" title="Notifications" onclick="openNotifC()"></div>
+        <div style="background-color: blueviolet;border-radius:50%;width:40px;height:40px;color:white" >_A_</div>
+        </div>
+    </nav>
+    <div class="center_nav">
+        <input type="text" placeholder="Search...." ><i class="fa" 
+        style="background-color: rgb(200, 200, 200);height:28.5px;padding-top: 7px;
+        padding-right: 5px;border-top-right-radius: 7px;padding-left: 2px;border-bottom-right-radius: 7px;">&#xf002;</i>
+        <i class="fa fa-microphone" style="margin-left: 8px;"></i>
+    </div>
+        <div class="left_nav_bar">
+            <div class="left_nav_bar_first">
+            <div><i class="fa fa-home" style="font-size: 130%;"></i> <span id="home"> Home</span></div>
+            <div><b style="font-size: 130%;">S</b><span id="shorts"> Shorts</span></div>
+            <div><i>Icon </i><span id="subscribe">Subscription</span></div>
+            </div>
+            <hr>
+            <div class="left_nav_bar_you"> 
+            <h3>You</h3>
+            <div><i class="fa fa-refresh" aria-hidden="true"></i> <span> History</span></div>
+            <div><i class="fa fa-clock-o" aria-hidden="true"></i> <span> Watched later</span></div>
+            <div><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span> Liked Videos</span></div>
+            </div>
+            <hr>
+            <div class="left_nav_bar_settings">
+                <h3>Subscriptions</h3>
+                <div><a href="./Channel1.html"> <img src="../pexels-bob-ward-3647693_s.jpg" style="width: 25px;"> <pre style="display: inline;">  </pre><span> Bombo Poascast</span></a></div>
+                <div><a href="./Channel2.html"> <img src="../pexels-athena-2582937_s.jpg" style="width: 25px;"> <pre style="display: inline;">  </pre><span> Vhembe NEWS</span></a></div>
+                <div><a href="./Channel3.html"> <img src="../pexels-harsch-shivam-2007647.jpg" style="width: 25px;"> <pre style="display: inline;">  </pre><span> Tech Buddy</span></a></div>
+                <div><a href="./Channel4.html"> <img src="../pexels-sebastian-arie-voortman-214574.jpg" style="width: 25px;"> <pre style="display: inline;">  </pre><span> Money Making</span></a></div>
+                <div><a href="./Channel5.html"> <img src="../four_s.jpg" style="width: 25px;"> <pre style="display: inline;">  </pre><span> Mr Ezekiel</span></a></div>
+                <div><a href="./Channel6.html"> <img src="../five_s.jpg" style="width: 25px;"> <pre style="display: inline;">  </pre><span> Fixing Cars 102</span></a></div>
+            </div>
+            <hr>
+            <div onclick="openSettingsC()">
+                <i class="fa fa-cog" aria-hidden="true" style="font-size: 115%;"><pre style="color: white;display: inline;">  </pre>Settings</i>
+            </div>
+        </div>
+    <div class="mainC">
+    <header>
+        <img src="../pexels-harsch-shivam-2007647_s.jpg" alt="profile_pic" style="width: 200px;border-radius: 50%;">
+        <div>
+            <h2>Tech Buddy</h2>
+            <p>This is a awesome Poadcast account for personal development for everyone who is willing to change their life</p>
+            <br>
+        </div>
+    </header><br>
+    <div class="contentC" id="contentC">
+        <br>
+        <ul><li ><a href="#" id="home1" > Home</a></li><li><a href="#" id="video"> Videos</a></li><li><a href="#" id="shorts1"> Shorts</a></li><li><a href="#" id="live"> Live</a></li></ul>
+        <hr>
+        <div style="display: grid;grid-template-columns: 1fr 3fr;">
+            <img src="../pexels-harsch-shivam-2007647.jpg" style="width: 180px;height:100px">
+            <p>Hi, welcome to bombo poadcast for you here in in Las vergas <br>jhbvgfdhjbvhjgfdvb gfbv hjgfbv jh jgvbfdjhsvbkj</p>
+        </div>
+        <h3>For You</h3><hr>
+        <img src="../pexels-harsch-shivam-2007647.jpg" style="width: 150px;height:250px;display: inline;">
+        <img src="../pexels-harsch-shivam-2007647.jpg" style="width: 150px;height:250px;display: inline;">
+        <img src="../pexels-harsch-shivam-2007647.jpg" style="width: 150px;height:250px;display: inline;">
+        <img src="../pexels-harsch-shivam-2007647.jpg" style="width: 150px;height:250px;display: inline;">
+    </div>
+    </div>
+    <script>
+        var home1 = document.getElementById('home1');
+        var live = document.getElementById('live');
+        var shorts1 = document.getElementById('shorts1');
+        var video = document.getElementById('video');
+        var contentC = document.getElementById('contentC');
+
+        home1.addEventListener('click', (event) => {
+            home1.style.color = '#ddd';
+            live.style.color = 'black';
+            shorts1.style.color = 'black';
+            video.style.color = 'black';
+        })
+        live.addEventListener('click', (event) => {
+            home1.style.color = 'black';
+            live.style.color = '#ddd';
+            shorts1.style.color = 'black';
+            video.style.color = 'black';
+
+            contentC.innerHTML = "<hr><span style='font-size:200%'>Nothing To Show Here!</span>"
+
+        })
+        shorts1.addEventListener('click', (event) => {
+            home1.style.color = 'black';
+            live.style.color = 'black';
+            shorts1.style.color = '#ddd';
+            video.style.color = 'black';
+        })
+        video.addEventListener('click', (event) => {
+            home1.style.color = 'black';
+            live.style.color = 'black';
+            shorts1.style.color = 'black';
+            video.style.color = '#ddd';
+        })
+
+        home1.style.color = '#ddd'
+    </script>
+</body>
+</html>
