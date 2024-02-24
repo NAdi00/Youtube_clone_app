@@ -112,3 +112,7 @@ function openSettings() {
 function openSettingsC() {
   window.open('../Settings.html')
 }
+
+var menuY = document.getElementById('menuY');
+var menuS = document.getElementById('menuS');
+
