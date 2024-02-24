@@ -1,7 +1,7 @@
 
 
-var settings = document.getElementsByClassName("left_nav_bar_settings");
-var you = document.getElementsByClassName("left_nav_bar_you");
+var You = document.getElementById("menuSH");
+var youContent = document.getElementById('menuSC');
 var home = document.getElementById("home");
 var shorts = document.getElementById("shorts");
 var subscribe = document.getElementById("subscribe");
@@ -13,9 +13,9 @@ var count = 0;
 function menu() {
     count += 1;
 
-    if (count % 2 == 0) {
-        settings.style.display = 'none';
-        you.innerHtml = "<div><h3>You<br>Icon</h3></div>";
+    console.log(count);
+    if (count % 2 == 1) {
+        youContent.style.display = 'none';
         ///you.style.hover = "<div><h3>Icon</h3><span>History</span><br><span>Watched Videos</span><br><span>Liked Videos</span></div>"
 
         home.style.display = 'none';
@@ -23,6 +23,8 @@ function menu() {
         subscribe.style.display = 'none';
 
     }else {
+
+      youContent.style.display = 'inline'
         home.style.display = 'inline';
         shorts.style.display = 'inline';
         subscribe.style.display = 'inline';
@@ -112,7 +114,3 @@ function openSettings() {
 function openSettingsC() {
   window.open('../Settings.html')
 }
-
-var menuY = document.getElementById('menuY');
-var menuS = document.getElementById('menuS');
-
