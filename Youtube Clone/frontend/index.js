@@ -5,6 +5,8 @@ var youContent = document.getElementById('menuSC');
 var home = document.getElementById("home");
 var shorts = document.getElementById("shorts");
 var subscribe = document.getElementById("subscribe");
+var content11 = document.getElementById("content11");
+var left_nav_bar = document.getElementById("left_nav_bar");
 
 ////Addeventlistener hover to variable/object you
 
@@ -21,16 +23,28 @@ function menu() {
         home.style.display = 'none';
         shorts.style.display = 'none';
         subscribe.style.display = 'none';
+        // content11.style.position = 'absolute';
+        content11.style.left = '15%';
+        left_nav_bar.style.width = '12%';
+        You.style.fontSize = "100%";
+        content11.style.width = '85%'
 
     }else {
 
+      content11.style.left = '25%';
+      left_nav_bar.style.width = '23%'
       youContent.style.display = 'inline'
         home.style.display = 'inline';
         shorts.style.display = 'inline';
         subscribe.style.display = 'inline';
-        settings.style.display = 'default';
+        // settings.style.display = 'default';
+        You.style.fontSize = "200%"
+        content11.style.width = '73%'
+        // content11.style.position = 'absolute';
+        content11.style.left = 'default';
+        left_nav_bar.style.width = 'default'
 
-        you.innerHtml = "<h3>You</h3><div><i>Icon </i><span>History</span></div><div><i>Icon </i><span>Watched later</span></div><div><i>Icon </i><span>Liked Videos</span></div>";
+        // you.innerHtml = "<h3>You</h3><div><i>Icon </i><span>History</span></div><div><i>Icon </i><span>Watched later</span></div><div><i>Icon </i><span>Liked Videos</span></div>";
     }
 }
 
