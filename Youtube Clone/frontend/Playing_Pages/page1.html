@@ -34,7 +34,7 @@ crossorigin="anonymous">
     <div class="page_main">
         <div class="video">
             <div><img src="../pexels-athena-2582937.jpg" style="width: 80%;left: 10%;position: relative;"><br><br><pre style="text-align: center;font-size: 120%;"><b>JBBVJHDF BVDFHGBVHGDVH FGDBVJHDFGBVSKB JNDFVBJHDFGB VBJDFHBV BNVJHD</b></pre></div>
-            <pre style="text-align: center;">Channel           <button style="background-color: white;border: 1px solid black;color:black;border-radius: 10px;font-size: 110%;">Join</button> <button style="background-color:black;border: none;color:white;border-radius: 10px;font-size: 110%;">Subscribe</button>     <button style="background-color: #ddd;border: none;color:black;border-radius: 10px;font-size: 110%;"><i class="fa fa-thumbs-o-up" aria-hidden="true"> 500</i> | <i class="fa fa-thumbs-o-down" aria-hidden="true"></i></button> <button style="background-color: #ddd;border: none;color:black;border-radius: 10px;font-size: 110%;"><i class="fa fa-share" aria-hidden="true"> Share</i></button>  <button style="background-color: #ddd;border: none;color:black;border-radius: 10px;font-size: 110%;">...</button></pre>
+            <pre style="text-align: center;">Channel           <button style="background-color: white;border: 1px solid black;color:black;border-radius: 10px;font-size: 110%;" id="join">Join</button> <button style="background-color:black;border: none;color:white;border-radius: 10px;font-size: 110%;" id="subsribe__">Subscribe</button>     <button style="background-color: #ddd;border: none;color:black;border-radius: 10px;font-size: 110%;"><i class="fa fa-thumbs-o-up" aria-hidden="true" id="thumbup"> 500</i> | <i class="fa fa-thumbs-o-down" aria-hidden="true" id="thumbdown"></i></button> <button style="background-color: #ddd;border: none;color:black;border-radius: 10px;font-size: 110%;"><i class="fa fa-share" aria-hidden="true"> Share</i></button>  <button style="background-color: #ddd;border: none;color:black;border-radius: 10px;font-size: 110%;">...</button></pre>
             <br>
             <div>
                 <h3>20 Comments</h3>
@@ -46,7 +46,7 @@ crossorigin="anonymous">
             </div>
         </div>
         <div class="suggestions">
-            <button style="background-color: white;border: 1px solid black;color:black;width:80%;border-radius: 10px;position: relative;left: 10%;margin-bottom: 10px;" id="charts">Show chat replay</button>
+            <button style="background-color: white;border: 1px solid black;color:black;width:80%;border-radius: 10px;position: relative;left: 10%;margin-bottom: 10px;height: 35px;" id="charts">Show chat replay<span id="aftercharts" style="display: none;"><br><br>Nothing here</span></button>
             <a href="./page2.html"><img src="../pexels-harsch-shivam-2007647.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
             <a href="./page3.html"><img src="../pexels-sebastian-arie-voortman-214574.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
             <a href="./page4.html"><img src="../four.jpg" alt="pic" ><span style="text-align: center;">nchfbvhgfj hfhgfbfhg hgghbgrd</span></a>
@@ -81,6 +81,67 @@ crossorigin="anonymous">
             Comments.innerHTML = commentElement.map((item) => item);
             
         }
+
+        var charts = document.getElementById("charts");
+        var thumbup = document.getElementById("thumbup");
+        var thumbdown = document.getElementById("thumbdown");
+        var join = document.getElementById("join");
+        var subscribe__ = document.getElementById("subscribe__");
+        document.getElementById("aftercharts").style.display = 'none';
+
+        var countCharts = 0;
+        charts.addEventListener("click", () => {
+            if (countCharts % 2 == 0) {
+                charts.style.height = "200px";
+                document.getElementById("aftercharts").style.display = 'block';
+            }else {
+                charts.style.height = "35px";
+                document.getElementById("aftercharts").style.display = 'none';
+            }
+            countCharts += 1;
+        })
+        ////////////////////////////////////NOT WORKING
+        var countThumbup = 0;
+        thumbup.addEventListener("click", () => {
+            if (countThumbup % 2 == 0) {
+                document.getElementById("thumpup").style.backgroundColor = "black";
+            }else {
+                document.getElementById("thumpup").style.backgroundColor = "white";
+            }
+            countThumbup += 1;
+        })
+        var countThumbdown = 0;
+        thumbdown.addEventListener("click", () => {
+            if (countThumbdown % 2 == 0) {
+                document.getElementById("thumpdown").style.color = "black";
+            }else {
+                document.getElementById("thumpdown").style.color = "white";
+            }
+            countThumbdown += 1;
+        })
+        //////////////////////////////////////////////////////////
+        var countJoin = 0;
+        join.addEventListener("click", () => {
+            if (countJoin % 2 == 0) {
+                document.getElementById("join").style.backgroundColor = "black";
+                document.getElementById("join").style.color = "white";
+            }else {
+                document.getElementById("join").style.backgroundColor = "white";
+                document.getElementById("join").style.color = "black";
+            }
+            countJoin += 1;
+        });
+        var countSubscribe = 0;
+        subscribe__.addEventListener("click", () => {
+            if (countSubscribe % 2 == 1) {
+                document.getElementById("subscribe__").style.backgroundColor = "black";
+                document.getElementById("subscribe__").style.color = "white";
+            }else {
+                document.getElementById("subscribe__").style.backgroundColor = "white";
+                document.getElementById("subscribe__").style.color = "black";
+            }
+            countSubscribe += 1;
+        });
     </script>
 </body>
 </html>
